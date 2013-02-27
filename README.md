@@ -1,27 +1,27 @@
-#prix-ars-2013-UI
+#prix-ars-2013-3D
 
-Touch panel UI for Prix Ars 2013 competition.
+3D projection for Prix Ars 2013 competition.
 
 Requirement
 ---
-
-###Touch panel for Mac
-
- - TUIO UPDD
-[http://www.touch-base.com/documentation/TUIO.htm](http://www.touch-base.com/documentation/TUIO.htm)
 
 ###Openframeworks Addon
 
  - Openframeworks 0073
  [http://www.openframeworks.cc/download/](http://www.openframeworks.cc/download/)
 
- - OfxTUIO
-[https://github.com/patriciogonzalezvivo/ofxTuio](https://github.com/patriciogonzalezvivo/ofxTuio)
+ - ofxOSC
 
- - ofxEasingFunc
-[https://github.com/satoruhiga/ofxEasingFunc](https://github.com/satoruhiga/ofxEasingFunc)
+## OSC
 
-
+ - receive port
+   4444
+   
+ - protocol
+ /right/image "filePath" cameraId
+ /left/image "filePath" cameraId
+ 
+ 
 Credit
 ---
 
