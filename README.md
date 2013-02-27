@@ -17,9 +17,9 @@ Requirement
  - receive port
    4444
    
- - protocol
- /right/image "filePath" cameraId
- /left/image "filePath" cameraId
+ - /right/image "filePath" cameraId
+ 
+ - /left/image "filePath" cameraId
  
  
 Credit
