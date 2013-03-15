@@ -2,10 +2,15 @@
 
 #include "ofMain.h"
 #include "ofxOsc.h"
+#include "ofxTween.h"
 
 #define PORT 4444
 
-class testApp : public ofBaseApp{
+#define LEFT_TWEEN_ID 0
+#define RIGHT_TWEEN_ID 1
+
+class testApp : public ofBaseApp
+{
 public:
     void setup();
     void update();
@@ -26,7 +31,14 @@ public:
     
     ofxOscReceiver receiver;
     
-    string leftFile,rightFile;
-    int leftCameraId,rightCameraId;
+    string leftFile, rightFile;
+    int leftCameraId, rightCameraId;
     
+    int leftAlpha, rightAlpha;
+    bool bLeftFadeIn, bRightFadeIn;
+    bool bLeftFadeOut, bRightFadeOut;
+    ofxTween leftAlphaTween, rightAlphaTween;
+    ofxEasingCirc 	easingCirc;
+    
+    void tweenCompleted(int &id);
 };
