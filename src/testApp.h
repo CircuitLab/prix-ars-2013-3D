@@ -29,6 +29,8 @@ public:
     ofImage rightImage;
     ofImage leftImage;
     
+    bool bCompleteLoadingNewLeftImage, bCompleteLoadingNewRightImage;
+    
     ofxOscReceiver receiver;
     
     string leftFile, rightFile;
